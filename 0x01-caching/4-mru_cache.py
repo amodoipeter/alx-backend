@@ -10,7 +10,7 @@ class MRUCache(BaseCaching):
         self.head, self.tail = "head", "tail"
         self.next, self.prev = {}, {}
         self.handle(self.head, self.tail)
-        (
+        
     def handle(self, head, tail):
         """MRU algorithm to handle elements"""
         self.next[head], self.prev[tail] = tail, head
